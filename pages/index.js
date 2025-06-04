@@ -1,6 +1,6 @@
 "use client";
-
 import { Geist, Geist_Mono } from "next/font/google";
+import { useRouter } from "next/navigation"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div
-      className="bg-[url('https://images.ctfassets.net/1fvlg6xqnm65/5dNpodgNSF7R6XttO8RiXJ/dd6db1290460efb936811b33f50dc0fd/1x1_UPDATE.png')] w-full h-screen bg-cover bg-center"
+    className="w-screen h-screen bg-center bg-cover flex flex-col p-3"
+    style={{
+      backgroundImage:
+        "url('https://images.ctfassets.net/1fvlg6xqnm65/5dNpodgNSF7R6XttO8RiXJ/dd6db1290460efb936811b33f50dc0fd/1x1_UPDATE.png')",
+    }}
     >
       <div className="flex flex-row items-center justify-between p-10">
 
@@ -25,19 +30,19 @@ export default function Home() {
           alt="Mercedes Logo"
         />
         <div className="flex flex-row gap-20 text-white text-lg items-center">
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out">Vehicle</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out">Vehicle</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out">Stats</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out">Community</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out">About us</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Stats</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Community</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">About us</p>
         </div>
          <div className="flex flex-row gap-8 text-white text-lg items-center">
           <p>Search</p>
-          <p>Login</p>
+          <p className="cursor-pointer" onClick={() => router.push("/loginpage/login")}>Login</p>
         </div>
       </div>
       <div className="flex h-screen items-center justify-center flex-col pt-70 gap-1">
-        <div className="border rounded-full bg-white text-black p-3 font-bold">Go to our F1 programm</div>
+        <div className="border rounded-full bg-white text-black p-3 font-bold cursor-pointer" onClick={() => router.push("/mercedes/russel")}>Go to our F1 programm</div>
         <img
           className="h-[200px] w-[200px]"
           src="https://brandlogos.net/wp-content/uploads/2022/04/formula_1-logo-brandlogos.net_-512x512.png"
