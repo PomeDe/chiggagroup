@@ -30,19 +30,19 @@ export default function Home() {
           alt="Mercedes Logo"
         />
         <div className="flex flex-row gap-20 text-white text-lg items-center">
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Vehicle</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Vehicle</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Stats</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">Community</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-1000 ease-in-out cursor-pointer">About us</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400" onClick={() => router.push("/stats/vs")}>Stats</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Community</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">About us</p>
         </div>
          <div className="flex flex-row gap-8 text-white text-lg items-center">
           <p>Search</p>
-          <p className="cursor-pointer" onClick={() => router.push("/loginpage/login")}>Login</p>
+          <p className="cursor-pointer hover:text-blue-400" onClick={() => router.push("/loginpage/login")}>Login</p>
         </div>
       </div>
-      <div className="flex h-screen items-center justify-center flex-col pt-70 gap-1">
-        <div className="border rounded-full bg-white text-black p-3 font-bold cursor-pointer" onClick={() => router.push("/mercedes/russel")}>Go to our F1 programm</div>
+      <div className="flex h-screen items-center justify-center flex-col pt-100 gap-1">
+        <div className="border rounded-full bg-white text-black p-3 font-bold cursor-pointer hover:bg-black hover:text-white hover:duration-300 ease-in-out" onClick={() => router.push("/mercedes/russel")}>Go to our F1 programm</div>
         <img
           className="h-[200px] w-[200px]"
           src="https://brandlogos.net/wp-content/uploads/2022/04/formula_1-logo-brandlogos.net_-512x512.png"

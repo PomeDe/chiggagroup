@@ -20,7 +20,13 @@ export default function Page2(){
         </div>
         <div className=" h-full w-[500px] flex flex-col p-10 gap-10">
             <p className="text-6xl font-[Jomolhari]">Lewis Hamilton</p>
-            <p className="font-[Jomolhari text-3xl">Seven Times Formula One World Drivers' Chmapion</p>
+            <blockquote class="text-center text-2xl font-semibold text-gray-900 italic dark:text-white">
+  Seven Times
+  <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-orange-500">
+    <span class="relative text-white dark:text-gray-950">Formula</span>
+  </span>
+  One Champion
+</blockquote>
             <div className="p-10">
             <div className="flex items-center justify-center bg-white/30 backfrop-blur-md rounded-3xl h-[200px]  w-[300px]">
                 <img src="/ls.png" className="h-[100px] w-[100px]">
