@@ -30,10 +30,10 @@ export default function Home() {
           alt="Mercedes Logo"
         />
         <div className="flex flex-row gap-20 text-white text-lg items-center">
-          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Vehicle</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400" onClick={() => router.push("/car/c")}>Vehicle</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400" onClick={() => router.push("/car/c")}>Vehicle</p>
           <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400" onClick={() => router.push("/stats/vs")}>Stats</p>
-          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">Community</p>
+          <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400" onClick={() => router.push("/community/text")} >Community</p>
           <p className="hover:underline underline-offset-8 transition-all duration-300 ease-in-out cursor-pointer hover:text-blue-400">About us</p>
         </div>
          <div className="flex flex-row gap-8 text-white text-lg items-center">
