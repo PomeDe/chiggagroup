@@ -20,22 +20,22 @@ export default function Home() {
           className="h-9 w-9"
         />
         <nav className="flex gap-16 text-lg">
-          <p className="hover:underline underline-offset-8 cursor-pointer">Vehicle</p>
-          <p className="hover:underline underline-offset-8 cursor-pointer">Stats</p>
-          <p className="hover:underline underline-offset-8 cursor-pointer">Community</p>
-          <p className="hover:underline underline-offset-8 cursor-pointer">About us</p>
-          <p className="hover:underline underline-offset-8 cursor-pointer">About us</p>
+          <p className="hover:underline underline-offset-8 cursor-pointer hover:text-blue-400" onClick={() => router.push("/car/c")}>Vehicle</p>
+          <p className="hover:underline underline-offset-8 cursor-pointer hover:text-blue-400" onClick={() => router.push("/car/c")}>Vehicle</p>
+          <p className="hover:underline underline-offset-8 cursor-pointer hover:text-blue-400" onClick={() => router.push("/stats/vs")}>Stats</p>
+          <p className="hover:underline underline-offset-8 cursor-pointer hover:text-blue-400" onClick={() => router.push("/community/text")}>Community</p>
+          <p className="hover:underline underline-offset-8 cursor-pointer hover:text-blue-400">About us</p>
         </nav>
         <div className="flex gap-6 text-lg">
           <p>Search</p>
-          <p onClick={() => router.push("/loginpage/login")} className="cursor-pointer">Login</p>
+          <p onClick={() => router.push("/loginpage/login")} className="cursor-pointer hover:text-blue-400">Login</p>
         </div>
       </div>
 
       <div className="flex flex-1 items-center justify-center flex-col gap-6 pt-100">
         <button
   onClick={() => router.push("/mercedes/russel")}
-  className="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gradient-to-r hover:from-gray-200 hover:to-gray-400 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-xl"
+  className="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-black hover:border border-white hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-xl"
 >
   Go to our F1 programme
 </button>
